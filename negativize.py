@@ -1,8 +1,12 @@
 from PIL import Image
 import matplotlib.pyplot as plt
 import glob
+import sys
 
-for filename in glob.glob('images/*'):
+path = sys.argv[1]
+
+
+for filename in glob.glob(path + "/*"):
     img=Image.open(filename)
     
     w,h=img.size
@@ -13,5 +17,5 @@ for filename in glob.glob('images/*'):
             g=255-g
             b=255-b
             img.putpixel((i,j),(r,g,b))
-            
+
     im1 = img.save(filename)

@@ -1,6 +1,6 @@
 - Install the requirements with 
 pip install -r requirements.txt
 
-- Put the images in the image folder (images will be overwritten)
+- Launch the script passing the path to the folder as argument, like python3 negativize.py images
 
-- Launch the script
+- Images will be overwritten
